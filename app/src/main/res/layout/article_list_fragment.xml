@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:paddingHorizontal="8dp"
+    tools:context=".articleList.ArticleListFragment">
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/categories_array" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvArticles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationY="40dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="5"
+        tools:listitem="@layout/article_item" />
+
+    <include layout="@layout/common_layout" />
+
+</FrameLayout>

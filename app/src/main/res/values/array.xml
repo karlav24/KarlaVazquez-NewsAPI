@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="categories_array">
+        <item>Business</item>
+        <item>Technology</item>
+        <item>Sports</item>
+        <item>Entertainment</item>
+        <item>General</item>
+        <!-- Add more categories as needed -->
+    </string-array>
+</resources>
